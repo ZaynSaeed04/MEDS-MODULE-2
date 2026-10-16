@@ -1,0 +1,91 @@
+# ============================================================
+#  hdl-lab  —  Verilator / SystemVerilog / Verilog project
+# ============================================================
+.git/info/exclude
+# -------- Verilator build output (ENTIRE obj_dir) --------
+obj_dir/
+obj_dir.*/
+
+# -------- Compiled objects & binaries (anywhere) --------
+*.o
+*.a
+*.d
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.elf
+
+# -------- Waveforms / VCD dumps (heavy) --------
+#*.vcd
+*.fst
+*.fsdb
+*.wlf
+*.shm
+*.vpd
+*.ghw
+*.saif
+
+# -------- Verilator-generated C++ (in case obj_dir is renamed) --------
+V*.cpp
+V*.h
+V*.mk
+V*__ALL.*
+V*__Syms.*
+V*__verFiles.dat
+V*__ver.d
+V*_classes.mk
+V*__main.cpp
+V*__pch.h
+V*___024root*
+V*__Trace*
+V*__ver*
+verilated*.o
+verilated*.d
+verilated*.a
+verilated*.cpp
+verilated*.h
+
+# -------- Simulation leftovers --------
+work/
+work.*/
+simv/
+simv.daidir/
+csrc/
+xsim.dir/
+INCA_libs/
+waves.shm/
+*.log
+transcript
+vsim.wlf
+ucli.key
+
+# -------- Editors / IDE --------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+*.bak
+*.orig
+
+# -------- OS junk --------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------- Python (in case you add cocotb / scripts later) --------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# -------- Misc --------
+*.tmp
+*.lock
+tags
+cscope.out
